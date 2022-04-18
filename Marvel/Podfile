@@ -43,4 +43,7 @@ target 'Marvel' do
   # SnapKit for constraints
   pod 'SnapKit'
   
+  # Code quality
+  pod 'SwiftLint'
+  
 end

@@ -14,6 +14,7 @@ PODS:
   - SnapKit (5.6.0)
   - SVProgressHUD (2.2.5)
   - SwiftDate (5.1.0)
+  - SwiftLint (0.47.0)
   - SwiftyJSON (4.3.0)
 
 DEPENDENCIES:
@@ -28,6 +29,7 @@ DEPENDENCIES:
   - SnapKit
   - SVProgressHUD (~> 2.2)
   - SwiftDate (~> 5.0)
+  - SwiftLint
   - SwiftyJSON (~> 4.1)
 
 SPEC REPOS:
@@ -45,6 +47,7 @@ SPEC REPOS:
     - SnapKit
     - SVProgressHUD
     - SwiftDate
+    - SwiftLint
     - SwiftyJSON
 
 SPEC CHECKSUMS:
@@ -61,8 +64,9 @@ SPEC CHECKSUMS:
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SwiftDate: 6329e58969a2de31cea7f1ee1143b247693196e7
+  SwiftLint: d41cc46a2ae58ac6d9f26954bc89f1d72e71fdef
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
 
-PODFILE CHECKSUM: aeec183f9e18cb80cca3ad7227feb58e698c9a72
+PODFILE CHECKSUM: d9f949006cb47ad1ab543dd8dcefb56f17450011
 
 COCOAPODS: 1.11.3

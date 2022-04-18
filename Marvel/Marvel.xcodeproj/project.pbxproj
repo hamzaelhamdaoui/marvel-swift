@@ -87,7 +87,6 @@
 				B39D58B74CE80D0C778F9001 /* Pods-Marvel.debug.xcconfig */,
 				7A7247203F5D104E500BE43C /* Pods-Marvel.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -95,6 +94,8 @@
 			isa = PBXGroup;
 			children = (
 				BB1E7BFC280D58CE00BFA061 /* Marvel */,
+				BBC5E0D0280D850F00E9E1A7 /* Views */,
+				BB1E7C06280D58CF00BFA061 /* Assets.xcassets */,
 				BB1E7C13280D58D000BFA061 /* MarvelTests */,
 				BB1E7C1D280D58D000BFA061 /* MarvelUITests */,
 				BB1E7BFB280D58CE00BFA061 /* Products */,
@@ -116,9 +117,8 @@
 		BB1E7BFC280D58CE00BFA061 /* Marvel */ = {
 			isa = PBXGroup;
 			children = (
+				BB1E7C0B280D58CF00BFA061 /* Info.plist */,
 				BBA73697280D784D00F95DC4 /* Supporting Files */,
-				BBA73690280D77E500F95DC4 /* Home */,
-				BB1E7C06280D58CF00BFA061 /* Assets.xcassets */,
 			);
 			path = Marvel;
 			sourceTree = "<group>";
@@ -153,11 +153,18 @@
 		BBA73697280D784D00F95DC4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				BB1E7C0B280D58CF00BFA061 /* Info.plist */,
 				BB1E7BFF280D58CE00BFA061 /* SceneDelegate.swift */,
 				BB1E7BFD280D58CE00BFA061 /* AppDelegate.swift */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BBC5E0D0280D850F00E9E1A7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BBA73690280D77E500F95DC4 /* Home */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		F3B626BA48C1E952BE807ADD /* Frameworks */ = {
@@ -180,6 +187,7 @@
 				BB1E7BF7280D58CE00BFA061 /* Frameworks */,
 				BB1E7BF8280D58CE00BFA061 /* Resources */,
 				9BB5A352881D8E5B5B31E20A /* [CP] Embed Pods Frameworks */,
+				BBC5E0CF280D81A800E9E1A7 /* Swiftlint */,
 			);
 			buildRules = (
 			);
@@ -334,6 +342,24 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Marvel/Pods-Marvel-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		BBC5E0CF280D81A800E9E1A7 /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/SwiftLint/swiftlint\" --config \"${SRCROOT}/swiftlint.yml\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
