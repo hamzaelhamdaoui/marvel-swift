@@ -1,0 +1,68 @@
+PODS:
+  - Alamofire (4.9.1)
+  - Atributika (4.10.1)
+  - Bond (6.10.5):
+    - Differ (~> 1.3)
+    - ReactiveKit (~> 3.10)
+  - Differ (1.4.5)
+  - FutureKit (3.5.0)
+  - NTMonthYearPicker (1.0.0)
+  - Nuke (10.7.1)
+  - PaginatedTableView (1.0.1)
+  - RangeSeekSlider (1.8.0)
+  - ReactiveKit (3.19.1)
+  - SnapKit (5.6.0)
+  - SVProgressHUD (2.2.5)
+  - SwiftDate (5.1.0)
+  - SwiftyJSON (4.3.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.7)
+  - Atributika
+  - Bond (~> 6.10)
+  - FutureKit (~> 3.5)
+  - NTMonthYearPicker
+  - Nuke
+  - PaginatedTableView
+  - RangeSeekSlider
+  - SnapKit
+  - SVProgressHUD (~> 2.2)
+  - SwiftDate (~> 5.0)
+  - SwiftyJSON (~> 4.1)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Atributika
+    - Bond
+    - Differ
+    - FutureKit
+    - NTMonthYearPicker
+    - Nuke
+    - PaginatedTableView
+    - RangeSeekSlider
+    - ReactiveKit
+    - SnapKit
+    - SVProgressHUD
+    - SwiftDate
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  Atributika: 47e778507cfb3cd2c996278b0285221a62e97d71
+  Bond: 634aeea4043213350f39629458adc4129e883990
+  Differ: 3b6bd78e2b20cc795d9a86f7641d087524e4273e
+  FutureKit: 91f6760df942278db387b05f19a9fdfbeb097df2
+  NTMonthYearPicker: 27e1739d6e29428628c8275a7c1a9e4835c352f4
+  Nuke: 279f17a599fd1c83cf51de5e0e1f2db143a287b0
+  PaginatedTableView: 294d9831d5ddf5c0dcfbb4a281d4fcfb8d12f55a
+  RangeSeekSlider: 650b11fa1edcb92e1e0ede797669d98622570fb5
+  ReactiveKit: a36ebeb959fe6852dd674cc423163bfffb7e0541
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftDate: 6329e58969a2de31cea7f1ee1143b247693196e7
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
+
+PODFILE CHECKSUM: aeec183f9e18cb80cca3ad7227feb58e698c9a72
+
+COCOAPODS: 1.11.3

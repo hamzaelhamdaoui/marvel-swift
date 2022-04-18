@@ -1,0 +1,46 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Marvel' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+  
+  # Pods for Marvel
+  
+  # Webservice requests
+  pod 'Alamofire', '~> 4.7'
+  
+  # JSON Handling
+  pod 'SwiftyJSON', '~> 4.1'
+  
+  # Async handling with Future and Promise
+  pod 'FutureKit', '~> 3.5'
+  
+  # Paginated table view for infinite scroll
+  pod 'PaginatedTableView'
+  
+  # View binding
+  pod 'Bond', '~> 6.10'
+  
+  # Loading and Progress view
+  pod 'SVProgressHUD', '~> 2.2'
+  
+  # Download and cache images
+  pod 'Nuke'
+  
+  # Attributes for text
+  pod "Atributika"
+  
+  # NSDate utility methods
+  pod 'SwiftDate', '~> 5.0'
+  
+  # Month/Year date picker
+  pod 'NTMonthYearPicker'
+  
+  # Range Slider
+  pod 'RangeSeekSlider'
+  
+  # SnapKit for constraints
+  pod 'SnapKit'
+  
+end
