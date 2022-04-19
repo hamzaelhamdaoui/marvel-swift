@@ -163,7 +163,7 @@ opt_in_rules:
 - generic_type_name
 - legacy_hashing
 - legacy_nsgeometry_functions
-- multiline_function_chains
+#- multiline_function_chains
 - no_fallthrough_only
 - overridden_super_call
 - sorted_first_last

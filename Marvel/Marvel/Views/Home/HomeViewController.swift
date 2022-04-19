@@ -6,3 +6,12 @@
 //
 
 import Foundation
+import UIKit
+
+class HomeViewController: UIViewController {
+    var viewModel = HomeViewModel()
+
+    override func viewDidLoad() {
+        viewModel.fetchCharacters(start: 1, limit: 25)
+    }
+}

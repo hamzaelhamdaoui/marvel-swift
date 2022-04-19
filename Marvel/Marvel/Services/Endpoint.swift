@@ -6,6 +6,6 @@
 //
 
 class Endpoint {
-    static let apiUrl = "http://gateway.marvel.com/v1/public/"
+    static let apiUrl = "https://gateway.marvel.com/v1/public/"
     static let characters = apiUrl + "characters"
 }
