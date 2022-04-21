@@ -33,6 +33,9 @@
 		BBF9430E280EFFE600BAE9E9 /* Future+Void.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF9430B280EFFE600BAE9E9 /* Future+Void.swift */; };
 		BBF9430F280EFFE600BAE9E9 /* Future+Throws.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF9430C280EFFE600BAE9E9 /* Future+Throws.swift */; };
 		BBF94310280EFFE600BAE9E9 /* Future+Then.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF9430D280EFFE600BAE9E9 /* Future+Then.swift */; };
+		BBF94313280F126A00BAE9E9 /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBF94312280F126A00BAE9E9 /* HomeCell.xib */; };
+		BBF94315280F127700BAE9E9 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF94314280F127700BAE9E9 /* HomeCell.swift */; };
+		BBF94318280F140A00BAE9E9 /* FontHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF94317280F140A00BAE9E9 /* FontHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +88,9 @@
 		BBF9430B280EFFE600BAE9E9 /* Future+Void.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Future+Void.swift"; sourceTree = "<group>"; };
 		BBF9430C280EFFE600BAE9E9 /* Future+Throws.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Future+Throws.swift"; sourceTree = "<group>"; };
 		BBF9430D280EFFE600BAE9E9 /* Future+Then.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Future+Then.swift"; sourceTree = "<group>"; };
+		BBF94312280F126A00BAE9E9 /* HomeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
+		BBF94314280F127700BAE9E9 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
+		BBF94317280F140A00BAE9E9 /* FontHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +153,7 @@
 		BB1E7BFC280D58CE00BFA061 /* Marvel */ = {
 			isa = PBXGroup;
 			children = (
+				BBF94316280F13F700BAE9E9 /* Fonts */,
 				BB1E7C0B280D58CF00BFA061 /* Info.plist */,
 				BB1E7C06280D58CF00BFA061 /* Assets.xcassets */,
 				BBF94309280EFF7B00BAE9E9 /* Utils */,
@@ -178,6 +185,7 @@
 		BBA73690280D77E500F95DC4 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				BBF94311280F123600BAE9E9 /* HomeCell */,
 				BBA73691280D77FA00F95DC4 /* Home.storyboard */,
 				BBA73693280D780F00F95DC4 /* HomeViewController.swift */,
 				BBA73695280D781C00F95DC4 /* HomeViewModel.swift */,
@@ -233,6 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				BBF9430A280EFFA100BAE9E9 /* FutureKit */,
+				BBF94317280F140A00BAE9E9 /* FontHelper.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -245,6 +254,22 @@
 				BBF9430B280EFFE600BAE9E9 /* Future+Void.swift */,
 			);
 			path = FutureKit;
+			sourceTree = "<group>";
+		};
+		BBF94311280F123600BAE9E9 /* HomeCell */ = {
+			isa = PBXGroup;
+			children = (
+				BBF94312280F126A00BAE9E9 /* HomeCell.xib */,
+				BBF94314280F127700BAE9E9 /* HomeCell.swift */,
+			);
+			path = HomeCell;
+			sourceTree = "<group>";
+		};
+		BBF94316280F13F700BAE9E9 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		F3B626BA48C1E952BE807ADD /* Frameworks */ = {
@@ -363,6 +388,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB1E7C07280D58CF00BFA061 /* Assets.xcassets in Resources */,
+				BBF94313280F126A00BAE9E9 /* HomeCell.xib in Resources */,
 				BBA73692280D77FA00F95DC4 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -449,8 +475,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BBF9430E280EFFE600BAE9E9 /* Future+Void.swift in Sources */,
+				BBF94315280F127700BAE9E9 /* HomeCell.swift in Sources */,
 				BB1E7BFE280D58CE00BFA061 /* AppDelegate.swift in Sources */,
 				BBC5E0E8280D8EEF00E9E1A7 /* APIService.swift in Sources */,
+				BBF94318280F140A00BAE9E9 /* FontHelper.swift in Sources */,
 				BBC5E0E4280D8C0500E9E1A7 /* Stories.swift in Sources */,
 				BBC5E0EC280D94D800E9E1A7 /* CommonError.swift in Sources */,
 				BBC5E0DC280D8C0500E9E1A7 /* Items.swift in Sources */,

@@ -11,17 +11,21 @@ import Foundation
 import FutureKit
 
 protocol ServiceProtocol {
-    func fetchCharacters(start: Int?, limit: Int?) -> Future<CharactersResponse>
+    func fetchCharacters(start: Int?, limit: Int?, searchText: String) -> Future<CharactersResponse>
+    func getImageURL(urlString: String, imgExtension: String) -> URL?
 }
 
 class APIService: ServiceProtocol {
     static let shared: ServiceProtocol = APIService()
     private let APIKEY = "829356a53f49da37b07aa6da90cadf1d"
 
-    func fetchCharacters(start: Int? = 1, limit: Int? = 25) -> Future<CharactersResponse> {
+    func fetchCharacters(start: Int? = 1, limit: Int? = 25, searchText: String) -> Future<CharactersResponse> {
         var parameters = getParameters()
         parameters["offset"] = start
         parameters["limit"] = limit
+        if !searchText.isEmpty {
+            parameters["nameStartsWith"] = searchText
+        }
 
         return request(.get, Endpoint.characters, parameters: parameters)
     }
@@ -48,6 +52,11 @@ class APIService: ServiceProtocol {
             String(format: "%02hhx", $0)
         }.joined()
     }
+
+    func getImageURL(urlString: String, imgExtension: String) -> URL? {
+        let path = urlString.replacingOccurrences(of: "http", with: "https") + "/standard_small." + imgExtension
+        return URL(string: path)
+    }
 }
 
 extension APIService {
@@ -66,7 +75,7 @@ extension APIService {
             .responseJSON { response in
                 switch response.result {
                 case .success(let json):
-                    if let data = json as? Data {
+                    if let data = try? JSONSerialization.data(withJSONObject: json, options: []) {
                         promise.completeWithSuccess(data)
                     } else {
                         promise.completeWithFail(CommonError())

@@ -12,8 +12,8 @@ extension Future {
     /// Converts the current future to a Future<Void>, ignoring any result.
     /// Useful for combining different Futures if you don't care about the results
     func toVoid() -> Future<Void> {
-        return onSuccess { result -> Void in
-            return ()
+        onSuccess { _ -> Void in
+            ()
         }
     }
 }

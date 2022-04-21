@@ -19,7 +19,7 @@ struct MarvelData : Codable {
 	let limit : Int?
 	let total : Int?
 	let count : Int?
-	let results : [Results]?
+	let results : [Character]?
 
 	enum CodingKeys: String, CodingKey {
 
@@ -36,7 +36,7 @@ struct MarvelData : Codable {
 		limit = try values.decodeIfPresent(Int.self, forKey: .limit)
 		total = try values.decodeIfPresent(Int.self, forKey: .total)
 		count = try values.decodeIfPresent(Int.self, forKey: .count)
-		results = try values.decodeIfPresent([Results].self, forKey: .results)
+		results = try values.decodeIfPresent([Character].self, forKey: .results)
 	}
 
 }

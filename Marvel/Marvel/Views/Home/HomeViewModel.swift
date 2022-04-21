@@ -11,16 +11,21 @@ import FutureKit
 import ReactiveKit
 
 class HomeViewModel {
-    var characters = Observable<[Results]>([])
+    var characters = Observable<[Character]>([])
+    var searchText = Observable<String?>("")
+    var isAnimating = Observable<Bool>(false)
 
     func fetchCharacters(start: Int?, limit: Int?) -> Future<CharactersResponse> {
-        APIService.shared.fetchCharacters(start: start, limit: limit)
+        isAnimating.value = true
+        return APIService.shared.fetchCharacters(start: start, limit: limit, searchText: searchText.value ?? "")
             .then { response in
-                if let response = response.data?.results {
-                    self.characters.value = response
+                self.isAnimating.value = false
+                if let results = response.data?.results {
+                    self.characters.value.append(contentsOf: results)
                 }
             }
             .onFail { error in
+                self.isAnimating.value = false
                 // TODO: Handle error
             }
     }

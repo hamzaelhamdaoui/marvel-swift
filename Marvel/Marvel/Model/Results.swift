@@ -13,8 +13,10 @@ For support, please feel free to contact me at https://www.linkedin.com/in/syeda
 
 */
 
+import Atributika
 import Foundation
-struct Results : Codable {
+
+struct Character : Codable {
 	let id : Int?
 	let name : String?
 	let description : String?
@@ -57,4 +59,11 @@ struct Results : Codable {
 		urls = try values.decodeIfPresent([Urls].self, forKey: .urls)
 	}
 
+    var shortDescription: NSAttributedString {
+        let b = Style("b").foregroundColor(.black).font(FontHelper.boldFontWithSize(size: 14))
+        let all = Style.font(FontHelper.semiBoldFontWithSize(size: 12)).foregroundColor(UIColor.gray)
+
+        let shortDescription = "Comics <b>\(comics?.available ?? 0)</b> Series <b>\(series?.available ?? 0)</b> Stories <b>\(stories?.available ?? 0)</b> Events <b>\(events?.available ?? 0)</b>"
+        return shortDescription.style(tags: [b]).styleAll(all).attributedString
+    }
 }
