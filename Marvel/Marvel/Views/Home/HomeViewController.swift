@@ -64,6 +64,11 @@ class HomeViewController: UIViewController {
             }
         }.dispose(in: disposeBag)
         charactersTableView.reactive.selectedRowIndexPath.observeNext { index in
+            let character = self.viewModel.characters.value[index.row]
+            if let detailViewController = UIStoryboard(name: "Detail", bundle: nil).instantiateInitialViewController() as? DetailViewController {
+                detailViewController.setupViewModel(character: character)
+                self.navigationController?.pushViewController(detailViewController, animated: true)
+            }
         }.dispose(in: disposeBag)
     }
 

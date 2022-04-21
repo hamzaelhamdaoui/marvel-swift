@@ -12,7 +12,7 @@ import FutureKit
 
 protocol ServiceProtocol {
     func fetchCharacters(start: Int?, limit: Int?, searchText: String) -> Future<CharactersResponse>
-    func getImageURL(urlString: String, imgExtension: String) -> URL?
+    func getImageURL(urlString: String, imgExtension: String, imgVariant: String) -> URL?
 }
 
 class APIService: ServiceProtocol {
@@ -53,8 +53,8 @@ class APIService: ServiceProtocol {
         }.joined()
     }
 
-    func getImageURL(urlString: String, imgExtension: String) -> URL? {
-        let path = urlString.replacingOccurrences(of: "http", with: "https") + "/standard_small." + imgExtension
+    func getImageURL(urlString: String, imgExtension: String, imgVariant: String = "standard_small") -> URL? {
+        let path = "\(urlString.replacingOccurrences(of: "http", with: "https"))/\(imgVariant).\(imgExtension)"
         return URL(string: path)
     }
 }

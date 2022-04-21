@@ -45,7 +45,7 @@ class HomeCell: UITableViewCell {
     func setImage() {
         if let imageUrl = character?.thumbnail?.path,
             let imgExtension = character?.thumbnail?.thExtension,
-            let url = APIService.shared.getImageURL(urlString: imageUrl, imgExtension: imgExtension) {
+           let url = APIService.shared.getImageURL(urlString: imageUrl, imgExtension: imgExtension, imgVariant: "standard_small") {
             let options = ImageLoadingOptions(
                 placeholder: UIImage(named: "ic_placeholder"),
                 transition: .fadeIn(duration: 0.33)
