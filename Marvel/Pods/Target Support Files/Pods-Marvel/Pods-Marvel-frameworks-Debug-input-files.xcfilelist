@@ -8,3 +8,4 @@ ${BUILT_PRODUCTS_DIR}/Nuke/Nuke.framework
 ${BUILT_PRODUCTS_DIR}/PaginatedTableView/PaginatedTableView.framework
 ${BUILT_PRODUCTS_DIR}/ReactiveKit/ReactiveKit.framework
 ${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework
+${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework

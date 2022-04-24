@@ -22,7 +22,10 @@ def commonPods
   
   # Attributes for text
   pod "Atributika"
-
+  
+  # SnapKit for constraints
+  pod 'SnapKit'
+  
   # Code quality
   pod 'SwiftLint'
 end
