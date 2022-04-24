@@ -63,6 +63,11 @@ class HomeViewController: UIViewController {
                 SVProgressHUD.dismiss()
             }
         }.dispose(in: disposeBag)
+        viewModel.fetchError.observeNext { error in
+            if let error = error {
+                SVProgressHUD.showError(withStatus: error.localizedDescription)
+            }
+        }.dispose(in: disposeBag)
         charactersTableView.reactive.selectedRowIndexPath.observeNext { index in
             let character = self.viewModel.characters.value[index.row]
             if let detailViewController = UIStoryboard(name: "Detail", bundle: nil).instantiateInitialViewController() as? DetailViewController {

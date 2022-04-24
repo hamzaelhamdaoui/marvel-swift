@@ -15,6 +15,7 @@ class HomeViewModel {
     var characters = Observable<[Character]>([])
     var searchText = Observable<String?>("")
     var isAnimating = Observable<Bool>(false)
+    var fetchError = Observable<Error?>(nil)
 
     init(dataManager: ServiceProtocol = APIService.shared) {
         self.dataManager = dataManager
@@ -31,7 +32,7 @@ class HomeViewModel {
             }
             .onFail { error in
                 self.isAnimating.value = false
-                // TODO: Handle error
+                self.fetchError.value = error
             }
     }
 }
