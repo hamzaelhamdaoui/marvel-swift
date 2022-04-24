@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='MarvelTests.xctest' tests='4' failures='0'>
+  <testsuite name='MarvelTests.DetailViewModelTests' tests='2' failures='0'>
+    <testcase classname='MarvelTests.DetailViewModelTests' name='testGetItemsByResourceType' time='0.014'/>
+    <testcase classname='MarvelTests.DetailViewModelTests' name='testResourceNames' time='0.009'/>
+  </testsuite>
+  <testsuite name='MarvelTests.HomeViewModelTests' tests='2' failures='0'>
+    <testcase classname='MarvelTests.HomeViewModelTests' name='testFailFetchCharacters' time='0.010'/>
+    <testcase classname='MarvelTests.HomeViewModelTests' name='testFetchCharacters' time='0.009'/>
+  </testsuite>
+</testsuites>
