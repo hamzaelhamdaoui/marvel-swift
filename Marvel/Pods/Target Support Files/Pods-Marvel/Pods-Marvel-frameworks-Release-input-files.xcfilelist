@@ -4,12 +4,7 @@ ${BUILT_PRODUCTS_DIR}/Atributika/Atributika.framework
 ${BUILT_PRODUCTS_DIR}/Bond/Bond.framework
 ${BUILT_PRODUCTS_DIR}/Differ/Differ.framework
 ${BUILT_PRODUCTS_DIR}/FutureKit/FutureKit.framework
-${BUILT_PRODUCTS_DIR}/NTMonthYearPicker/NTMonthYearPicker.framework
 ${BUILT_PRODUCTS_DIR}/Nuke/Nuke.framework
 ${BUILT_PRODUCTS_DIR}/PaginatedTableView/PaginatedTableView.framework
-${BUILT_PRODUCTS_DIR}/RangeSeekSlider/RangeSeekSlider.framework
 ${BUILT_PRODUCTS_DIR}/ReactiveKit/ReactiveKit.framework
 ${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework
-${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework
-${BUILT_PRODUCTS_DIR}/SwiftDate/SwiftDate.framework
-${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework
