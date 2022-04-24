@@ -6,11 +6,10 @@
 //
 
 import Nuke
-import UIKit
 import ReactiveKit
+import UIKit
 
 class DetailViewController: UIViewController {
-
     @IBOutlet weak var characterImage: UIImageView!
     @IBOutlet weak var descriptionTitle: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!

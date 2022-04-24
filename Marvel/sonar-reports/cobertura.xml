@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage line-rate="0.2324110671936759" branch-rate="0.2164579606440072" lines-covered="294" lines-valid="1265" branches-covered="121" branches-valid="559" complexity="0.0" timestamp="1650789543" version="Slather 2.7.2">
+<coverage line-rate="0.2324110671936759" branch-rate="0.2164579606440072" lines-covered="294" lines-valid="1265" branches-covered="121" branches-valid="559" complexity="0.0" timestamp="1650841239" version="Slather 2.7.2">
   <sources>
     <source>/Users/avantgardeit/marvel-swift/Marvel</source>
   </sources>
