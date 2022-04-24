@@ -26,9 +26,8 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNavigationBar()
-        setupActions()
         setupTableView()
-        getCharacters()
+        setupActions()
     }
 
     func setEmptyView() {
@@ -81,22 +80,23 @@ class HomeViewController: UIViewController {
         charactersTableView.register(UINib(nibName: HomeCell.nibName, bundle: nil), forCellReuseIdentifier: HomeCell.reuseIdentifier)
         charactersTableView.paginatedDelegate = self
         charactersTableView.paginatedDataSource = self
+        charactersTableView.pageSize = 40
         charactersTableView.separatorStyle = .none
         setEmptyView()
     }
 
     func getCharacters() {
-        self.loadMore(1, 40, onSuccess: nil, onError: nil)
+        self.loadMore(0, 40, onSuccess: nil, onError: nil)
     }
 }
 
 extension HomeViewController: PaginatedTableViewDelegate {
     func loadMore(_ pageNumber: Int, _ pageSize: Int, onSuccess: ((Bool) -> Void)?, onError: ((Error) -> Void)?) {
-        if pageNumber == 1 {
+        if pageNumber == 0 {
             viewModel.characters.value = []
         }
 
-        viewModel.fetchCharacters(start: pageNumber, limit: pageSize)
+        viewModel.fetchCharacters(start: pageSize * (pageNumber), limit: 40)
             .then({ results in
                 if results.data?.results?.isEmpty ?? true {
                     onSuccess?(false)
