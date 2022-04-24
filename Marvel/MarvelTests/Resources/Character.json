@@ -1,0 +1,321 @@
+{
+  "id": 1009420,
+  "name": "Man-Thing",
+  "description": "",
+  "modified": "2011-05-13T14:31:28-0400",
+  "thumbnail": {
+    "path": "http://i.annihil.us/u/prod/marvel/i/mg/8/c0/4ce5a043191dc",
+    "extension": "jpg"
+  },
+  "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009420",
+  "comics": {
+    "available": 151,
+    "collectionURI": "http://gateway.marvel.com/v1/public/characters/1009420/comics",
+    "items": [
+      {
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/57849",
+        "name": "Adventure Into Fear (1970) #10"
+      },
+      {
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/57847",
+        "name": "Adventure Into Fear (1970) #19"
+      },
+      {
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/57810",
+        "name": "Astonishing Tales (1970) #12"
+      },
+      {
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/57811",
+        "name": "Astonishing Tales (1970) #13"
+      },
+      {
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/92788",
+        "name": "Avengers: Curse Of The Man-Thing (2021) #1"
+      },
+      {
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/67983",
+        "name": "Champions (2016) #23"
+      },
+      {
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/92792",
+        "name": "Curse Of The Man-Thing (Trade Paperback)"
+      },
+      {
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/8089",
+        "name": "Daredevil (1964) #113"
+      },
+      {
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/8090",
+        "name": "Daredevil (1964) #114"
+      },
+      {
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/40771",
+        "name": "Dark Avengers (2012) #176"
+      },
+      {
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/40776",
+        "name": "Dark Avengers (2012) #177"
+      },
+      {
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/40780",
+        "name": "Dark Avengers (2012) #178"
+      },
+      {
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/40773",
+        "name": "Dark Avengers (2012) #179"
+      },
+      {
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/40774",
+        "name": "Dark Avengers (2012) #180"
+      },
+      {
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/40778",
+        "name": "Dark Avengers (2012) #181"
+      },
+      {
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/40787",
+        "name": "Dark Avengers (2012) #182"
+      },
+      {
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/40786",
+        "name": "Dark Avengers (2012) #183"
+      },
+      {
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/73963",
+        "name": "Decades: Marvel In The '70s - Legion Of Monsters (Trade Paperback)"
+      },
+      {
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/20193",
+        "name": "Doctor Strange, Sorcerer Supreme (1988) #32"
+      },
+      {
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/20225",
+        "name": "Doctor Strange, Sorcerer Supreme (1988) #61"
+      }
+    ],
+    "returned": 20
+  },
+  "series": {
+    "available": 55,
+    "collectionURI": "http://gateway.marvel.com/v1/public/characters/1009420/series",
+    "items": [
+      {
+        "resourceURI": "http://gateway.marvel.com/v1/public/series/2113",
+        "name": "Adventure Into Fear (1970 - 1975)"
+      },
+      {
+        "resourceURI": "http://gateway.marvel.com/v1/public/series/16431",
+        "name": "Astonishing Tales (1970)"
+      },
+      {
+        "resourceURI": "http://gateway.marvel.com/v1/public/series/31702",
+        "name": "Avengers: Curse Of The Man-Thing (2021)"
+      },
+      {
+        "resourceURI": "http://gateway.marvel.com/v1/public/series/22552",
+        "name": "Champions (2016 - 2019)"
+      },
+      {
+        "resourceURI": "http://gateway.marvel.com/v1/public/series/31707",
+        "name": "Curse Of The Man-Thing (2021)"
+      },
+      {
+        "resourceURI": "http://gateway.marvel.com/v1/public/series/2002",
+        "name": "Daredevil (1964 - 1998)"
+      },
+      {
+        "resourceURI": "http://gateway.marvel.com/v1/public/series/789",
+        "name": "Dark Avengers (2012 - 2013)"
+      },
+      {
+        "resourceURI": "http://gateway.marvel.com/v1/public/series/26664",
+        "name": "Decades: Marvel In The '70s - Legion Of Monsters (2019)"
+      },
+      {
+        "resourceURI": "http://gateway.marvel.com/v1/public/series/3741",
+        "name": "Doctor Strange, Sorcerer Supreme (1988 - 1996)"
+      },
+      {
+        "resourceURI": "http://gateway.marvel.com/v1/public/series/24016",
+        "name": "Doctor Strange: Damnation (2018)"
+      },
+      {
+        "resourceURI": "http://gateway.marvel.com/v1/public/series/23782",
+        "name": "Doctor Strange: Lords of Fear (2017)"
+      },
+      {
+        "resourceURI": "http://gateway.marvel.com/v1/public/series/30519",
+        "name": "Empyre: Avengers (2020)"
+      },
+      {
+        "resourceURI": "http://gateway.marvel.com/v1/public/series/14022",
+        "name": "Fear Itself: Fearsome Four (2011)"
+      },
+      {
+        "resourceURI": "http://gateway.marvel.com/v1/public/series/10616",
+        "name": "Frankencastle (2010)"
+      },
+      {
+        "resourceURI": "http://gateway.marvel.com/v1/public/series/22895",
+        "name": "Giant-Size Man-Thing (1974 - 1975)"
+      },
+      {
+        "resourceURI": "http://gateway.marvel.com/v1/public/series/23276",
+        "name": "Giant-Size Spider-Man (1974 - 1975)"
+      },
+      {
+        "resourceURI": "http://gateway.marvel.com/v1/public/series/4766",
+        "name": "Howard the Duck (1979 - 1981)"
+      },
+      {
+        "resourceURI": "http://gateway.marvel.com/v1/public/series/4767",
+        "name": "Howard the Duck (1976 - 1979)"
+      },
+      {
+        "resourceURI": "http://gateway.marvel.com/v1/public/series/3883",
+        "name": "Howard the Duck Omnibus (2008)"
+      },
+      {
+        "resourceURI": "http://gateway.marvel.com/v1/public/series/3891",
+        "name": "HOWARD THE DUCK OMNIBUS HC [DM ONLY] (2008)"
+      }
+    ],
+    "returned": 20
+  },
+  "stories": {
+    "available": 185,
+    "collectionURI": "http://gateway.marvel.com/v1/public/characters/1009420/stories",
+    "items": [
+      {
+        "resourceURI": "http://gateway.marvel.com/v1/public/stories/3529",
+        "name": "Interior #3529",
+        "type": "interiorStory"
+      },
+      {
+        "resourceURI": "http://gateway.marvel.com/v1/public/stories/3531",
+        "name": "Interior #3531",
+        "type": "interiorStory"
+      },
+      {
+        "resourceURI": "http://gateway.marvel.com/v1/public/stories/3533",
+        "name": "The Man-Thing movie prequel concludes with a horrific showdown with Man-Thing as you’ve never seen it before! Check out an incar",
+        "type": "interiorStory"
+      },
+      {
+        "resourceURI": "http://gateway.marvel.com/v1/public/stories/7958",
+        "name": "1 of 1",
+        "type": "cover"
+      },
+      {
+        "resourceURI": "http://gateway.marvel.com/v1/public/stories/15737",
+        "name": "The Gladiator Strikes Back!",
+        "type": "cover"
+      },
+      {
+        "resourceURI": "http://gateway.marvel.com/v1/public/stories/15739",
+        "name": "The Man-Thing Stalks the Swamp!",
+        "type": "cover"
+      },
+      {
+        "resourceURI": "http://gateway.marvel.com/v1/public/stories/18540",
+        "name": "Incredible Hulk (1962) #197",
+        "type": "cover"
+      },
+      {
+        "resourceURI": "http://gateway.marvel.com/v1/public/stories/18541",
+        "name": "...And Man-Thing Makes Three!",
+        "type": "interiorStory"
+      },
+      {
+        "resourceURI": "http://gateway.marvel.com/v1/public/stories/18542",
+        "name": "Incredible Hulk (1962) #198",
+        "type": "cover"
+      },
+      {
+        "resourceURI": "http://gateway.marvel.com/v1/public/stories/18543",
+        "name": "The Shangri-La Syndrome!",
+        "type": "interiorStory"
+      },
+      {
+        "resourceURI": "http://gateway.marvel.com/v1/public/stories/18927",
+        "name": "Incredible Hulk (1962) #389",
+        "type": "cover"
+      },
+      {
+        "resourceURI": "http://gateway.marvel.com/v1/public/stories/18928",
+        "name": "Of Man and Man-Thing",
+        "type": ""
+      },
+      {
+        "resourceURI": "http://gateway.marvel.com/v1/public/stories/19014",
+        "name": "Six Months Later...",
+        "type": ""
+      },
+      {
+        "resourceURI": "http://gateway.marvel.com/v1/public/stories/19016",
+        "name": "Swamped",
+        "type": ""
+      },
+      {
+        "resourceURI": "http://gateway.marvel.com/v1/public/stories/20717",
+        "name": "What if...The Man-Thing had Regained Ted  Sallis' Brain?",
+        "type": "interiorStory"
+      },
+      {
+        "resourceURI": "http://gateway.marvel.com/v1/public/stories/22669",
+        "name": "Elements of Terror Part 1",
+        "type": "interiorStory"
+      },
+      {
+        "resourceURI": "http://gateway.marvel.com/v1/public/stories/22675",
+        "name": "Freedom Fighters [Elements of Terror]",
+        "type": ""
+      },
+      {
+        "resourceURI": "http://gateway.marvel.com/v1/public/stories/22742",
+        "name": "Perception & Actuality [Elements of Terror]",
+        "type": ""
+      },
+      {
+        "resourceURI": "http://gateway.marvel.com/v1/public/stories/22808",
+        "name": "Elements of Terror",
+        "type": ""
+      },
+      {
+        "resourceURI": "http://gateway.marvel.com/v1/public/stories/23095",
+        "name": "Cover #23095",
+        "type": "cover"
+      }
+    ],
+    "returned": 20
+  },
+  "events": {
+    "available": 2,
+    "collectionURI": "http://gateway.marvel.com/v1/public/characters/1009420/events",
+    "items": [
+      {
+        "resourceURI": "http://gateway.marvel.com/v1/public/events/302",
+        "name": "Fear Itself"
+      },
+      {
+        "resourceURI": "http://gateway.marvel.com/v1/public/events/219",
+        "name": "Siege of Darkness"
+      }
+    ],
+    "returned": 2
+  },
+  "urls": [
+    {
+      "type": "detail",
+      "url": "http://marvel.com/characters/1353/man-thing?utm_campaign=apiRef&utm_source=829356a53f49da37b07aa6da90cadf1d"
+    },
+    {
+      "type": "wiki",
+      "url": "http://marvel.com/universe/Man-Thing?utm_campaign=apiRef&utm_source=829356a53f49da37b07aa6da90cadf1d"
+    },
+    {
+      "type": "comiclink",
+      "url": "http://marvel.com/comics/characters/1009420/man-thing?utm_campaign=apiRef&utm_source=829356a53f49da37b07aa6da90cadf1d"
+    }
+  ]
+}

@@ -30,7 +30,7 @@ class APIService: ServiceProtocol {
         return request(.get, Endpoint.characters, parameters: parameters)
     }
 
-    func getParameters() -> Parameters {
+    private func getParameters() -> Parameters {
         var parameters = Parameters()
         let timeStamp = String(Int(Date().timeIntervalSince1970))
         let privateKey = "f568f1864cfac5629ef6514d050ce4efde17c0a9"
@@ -45,7 +45,7 @@ class APIService: ServiceProtocol {
         return parameters
     }
 
-    func MD5(string: String) -> String {
+    private func MD5(string: String) -> String {
         let digest = Insecure.MD5.hash(data: string.data(using: .utf8) ?? Data())
 
         return digest.map {
@@ -78,7 +78,7 @@ extension APIService {
                     if let data = try? JSONSerialization.data(withJSONObject: json, options: []) {
                         promise.completeWithSuccess(data)
                     } else {
-                        promise.completeWithFail(CommonError())
+                        promise.completeWithFail(CommonError.genericError)
                     }
                 case .failure(let error):
                     promise.completeWithFail(error)

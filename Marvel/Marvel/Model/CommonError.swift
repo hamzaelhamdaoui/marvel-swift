@@ -7,4 +7,15 @@
 
 import Foundation
 
-struct CommonError: Error {}
+enum CommonError: Error {
+    case genericError
+}
+
+extension CommonError: CustomStringConvertible {
+    var description: String {
+        switch self {
+        case .genericError:
+            return "An error has occurred"
+        }
+    }
+}

@@ -5,16 +5,16 @@
 //  Created by AvantgardeIT on 21/4/22.
 //
 
+import Bond
 import Foundation
 import RealityKit
-import Bond
 
 enum ResourceType {
     case comics
     case series
     case stories
     case events
-    
+
     var resourceName: String {
         switch self {
         case .comics:
@@ -30,12 +30,13 @@ enum ResourceType {
 }
 
 class DetailViewModel {
-    
+    let dataManager: ServiceProtocol
     let character: Character
     var selectedResourceType = Observable<ResourceType>(.comics)
-    
-    init(character: Character) {
+
+    init(character: Character, dataManager: ServiceProtocol = APIService.shared) {
         self.character = character
+        self.dataManager = dataManager
     }
 
     func getItemsByResourceType() -> [Items] {
