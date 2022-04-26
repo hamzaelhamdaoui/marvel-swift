@@ -1,10 +1,21 @@
 # marvel-swift
 
-Para la realización de este proyecto se ha utilizado una arquitectura MVVM. 
+An MVVM architecture has been used for the realization of this project. 
 
-Las comunicaciones con el servidor se llevan a cabo con Alamofire y FutureKit(https://github.com/FutureKit/FutureKit). 
+Communications with the server are carried out with Alamofire and FutureKit(https://github.com/FutureKit/FutureKit). 
 
-La lógica de negocio se comunica con las vistas mediante una aproximación más sencilla de RXSwift llamada ReactiveKit(https://github.com/DeclarativeHub/ReactiveKithttps://github.com/DeclarativeHub/ReactiveKit)
+The business logic communicates with the views using a simpler RXSwift approach called ReactiveKit(https://github.com/DeclarativeHub/ReactiveKithttps://github.com/DeclarativeHub/ReactiveKit).
+
+## Requirements 
+- Xcode 12.0+
+- iOS 14.0+
+- Swift 5.0
+
+## Common SetUp
+- Clone the repo.
+- Install dependencies with Cocoapods (inside project directory) using: pod install
+- Open the workspace Marvel.xcworkspace
+- Have fun!
 
 ## Frameworks
 
@@ -17,21 +28,22 @@ La lógica de negocio se comunica con las vistas mediante una aproximación más
 - Atributika (Text attributes) https://github.com/psharanda/Atributika
 - Snapkit (Constraints manager) https://github.com/SnapKit/SnapKit
 - Swiftlint (Code quality) https://github.com/realm/SwiftLint
+- KeychainSwift (Keychain helper) https://github.com/evgenyneu/keychain-swift
 
 ## Analysis
 
-Se ha realizado un análisis con Instruments para la detección de fugas de memoria
+An analysis has been performed with Instruments for the detection of memory leaks.
 
 <img width="1267" alt="Captura de pantalla 2022-04-24 a las 8 34 47" src="https://user-images.githubusercontent.com/86626415/165001073-23cc52a4-289c-45d9-8f16-f2bdca9394bb.png">
 
-Se ha cubierto la lógica de negocio con Test Unitarios. El análisis de Sonar muestra 27 Code Smells localizados en dos carpetas auxiliares (ImageViewer y FutureKit) las cuales extienden algunas funcionalidades para la gestión de la imagen del detalle y los Futures.
+The business logic has been covered with Unitary Tests. Sonar analysis shows 27 Code Smells located in two auxiliary folders (ImageViewer and FutureKit) which extend some functionalities for the management of the detail image and Futures.
 
 <img width="1307" alt="Captura de pantalla 2022-04-25 a las 1 03 28" src="https://user-images.githubusercontent.com/86626415/165001122-6e76697d-b86b-4995-b233-74840c86de0a.png">
 
-## Próximos pasos
+## Next steps
 
-En caso de disponer mas tiempo se hubieran realizado las siguientes mejoras:
+If more time was available, the following improvements would have been made:
 
-- Implementación de inyección de dependencias
-- Mejoras estéticas
+- Dependency injection implementation
+- Aesthetic improvements
 - UI Tests
