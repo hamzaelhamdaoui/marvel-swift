@@ -84,10 +84,11 @@ class DetailViewController: UIViewController {
     }
 
     func configureTable() {
-        resourcesTable.register(UINib(nibName: DetailCell.nibName(), bundle: nil), forCellReuseIdentifier: DetailCell.reuseIdentifier())
-        resourcesTable.delegate = self
+        resourcesTable.register(UINib(nibName: DetailCell.nibName, bundle: nil), forCellReuseIdentifier: DetailCell.reuseIdentifier)
         resourcesTable.dataSource = self
         resourcesTable.separatorStyle = .none
+        resourcesTable.estimatedRowHeight = DetailCell.cellHeight
+        resourcesTable.rowHeight = UITableView.automaticDimension
     }
 
     func setStyles() {
@@ -124,19 +125,13 @@ class DetailViewController: UIViewController {
     }
 }
 
-extension DetailViewController: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        DetailCell.cellHeight
-    }
-}
-
 extension DetailViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         viewModel?.getItemsByResourceType().count ?? 0
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: DetailCell.reuseIdentifier(), for: indexPath) as! DetailCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: DetailCell.reuseIdentifier, for: indexPath) as! DetailCell
         let items = viewModel?.getItemsByResourceType()
         cell.title = items?[indexPath.row].name
         return cell

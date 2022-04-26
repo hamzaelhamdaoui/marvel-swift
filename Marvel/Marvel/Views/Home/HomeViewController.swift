@@ -16,6 +16,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var charactersTableView: PaginatedTableView!
     @IBOutlet weak var searchTextField: UITextField!
 
+    private let TABLE_LIMIT = 40
     var viewModel = HomeViewModel()
     var disposeBag = DisposeBag()
 
@@ -80,13 +81,13 @@ class HomeViewController: UIViewController {
         charactersTableView.register(UINib(nibName: HomeCell.nibName, bundle: nil), forCellReuseIdentifier: HomeCell.reuseIdentifier)
         charactersTableView.paginatedDelegate = self
         charactersTableView.paginatedDataSource = self
-        charactersTableView.pageSize = 40
+        charactersTableView.pageSize = TABLE_LIMIT
         charactersTableView.separatorStyle = .none
         setEmptyView()
     }
 
     func getCharacters() {
-        self.loadMore(0, 40, onSuccess: nil, onError: nil)
+        self.loadMore(0, TABLE_LIMIT, onSuccess: nil, onError: nil)
     }
 }
 
@@ -96,7 +97,7 @@ extension HomeViewController: PaginatedTableViewDelegate {
             viewModel.characters.value = []
         }
 
-        viewModel.fetchCharacters(start: pageSize * (pageNumber), limit: 40)
+        viewModel.fetchCharacters(start: pageSize * (pageNumber), limit: TABLE_LIMIT)
             .then({ results in
                 if results.data?.results?.isEmpty ?? true {
                     onSuccess?(false)
@@ -169,7 +170,6 @@ extension HomeViewController {
 
     func reportError(_ error: Error) {
         let description = error.localizedDescription
-        print("Received error: \(error) with description \(description)")
         showError(description)
     }
 

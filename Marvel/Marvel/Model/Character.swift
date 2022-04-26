@@ -63,7 +63,7 @@ struct Character : Codable {
         let b = Style("b").foregroundColor(.black).font(FontHelper.boldFontWithSize(size: 14))
         let all = Style.font(FontHelper.semiBoldFontWithSize(size: 12)).foregroundColor(UIColor.gray)
 
-        let shortDescription = "Comics <b>\(comics?.available ?? 0)</b> Series <b>\(series?.available ?? 0)</b> Stories <b>\(stories?.available ?? 0)</b> Events <b>\(events?.available ?? 0)</b>"
+        let shortDescription = "Comics <b>\(comics?.available ?? 0)</b> Series <b>\(series?.available ?? 0)</b> Stories <b>\(stories?.available ?? 0)</b>"
         return shortDescription.style(tags: [b]).styleAll(all).attributedString
     }
 }

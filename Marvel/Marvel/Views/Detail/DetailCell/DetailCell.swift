@@ -8,17 +8,9 @@
 import UIKit
 
 class DetailCell: UITableViewCell {
-    class func nibName() -> String {
-        "DetailCell"
-    }
-    
-    class func reuseIdentifier() -> String {
-        "DetailCell"
-    }
-    
-    class var cellHeight: CGFloat {
-        45
-    }
+    static let nibName = "DetailCell"
+    static let reuseIdentifier = "DetailCell"
+    static let cellHeight: CGFloat = 45
 
     @IBOutlet weak var titleLabel: UILabel!
 
@@ -35,5 +27,7 @@ class DetailCell: UITableViewCell {
 
     func setStyles() {
         titleLabel.font = FontHelper.semiBoldFontWithSize(size: 14)
+        titleLabel.lineBreakMode = .byWordWrapping
+        titleLabel.numberOfLines = 2
     }
 }

@@ -9,17 +9,9 @@ import Nuke
 import UIKit
 
 class HomeCell: UITableViewCell {
-    class var reuseIdentifier: String {
-        "HomeCell"
-    }
-
-    class var nibName: String {
-        "HomeCell"
-    }
-
-    class var rowHeight: CGFloat {
-        75
-    }
+    static let nibName = "HomeCell"
+    static let reuseIdentifier = "HomeCell"
+    static let rowHeight: CGFloat = 75
 
     @IBOutlet weak var characterName: UILabel!
     @IBOutlet weak var characterImage: UIImageView!
