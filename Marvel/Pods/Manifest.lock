@@ -6,6 +6,7 @@ PODS:
     - ReactiveKit (~> 3.10)
   - Differ (1.4.5)
   - FutureKit (3.5.0)
+  - KeychainSwift (20.0.0)
   - Nuke (10.7.1)
   - PaginatedTableView (1.0.1)
   - ReactiveKit (3.19.1)
@@ -18,6 +19,7 @@ DEPENDENCIES:
   - Atributika
   - Bond (~> 6.10)
   - FutureKit (~> 3.5)
+  - KeychainSwift (~> 20.0)
   - Nuke
   - PaginatedTableView
   - SnapKit
@@ -31,6 +33,7 @@ SPEC REPOS:
     - Bond
     - Differ
     - FutureKit
+    - KeychainSwift
     - Nuke
     - PaginatedTableView
     - ReactiveKit
@@ -44,6 +47,7 @@ SPEC CHECKSUMS:
   Bond: 634aeea4043213350f39629458adc4129e883990
   Differ: 3b6bd78e2b20cc795d9a86f7641d087524e4273e
   FutureKit: 91f6760df942278db387b05f19a9fdfbeb097df2
+  KeychainSwift: 0ce6a4d13f7228054d1a71bb1b500448fb2ab837
   Nuke: 279f17a599fd1c83cf51de5e0e1f2db143a287b0
   PaginatedTableView: 294d9831d5ddf5c0dcfbb4a281d4fcfb8d12f55a
   ReactiveKit: a36ebeb959fe6852dd674cc423163bfffb7e0541
@@ -51,6 +55,6 @@ SPEC CHECKSUMS:
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SwiftLint: d41cc46a2ae58ac6d9f26954bc89f1d72e71fdef
 
-PODFILE CHECKSUM: e612dcb66a059a9c3c2d897dd9e54143ebd6f63e
+PODFILE CHECKSUM: 730d943ee6326108226d7ecbec40faf4f651ae44
 
 COCOAPODS: 1.11.3

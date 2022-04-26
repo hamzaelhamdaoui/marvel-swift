@@ -5,6 +5,7 @@
 //  Created by AvantgardeIT on 18/4/22.
 //
 
+import KeychainSwift
 import UIKit
 
 @main
@@ -13,7 +14,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        saveAPICredentials()
         return true
+    }
+
+    func saveAPICredentials() {
+        let keychain = KeychainSwift()
+        keychain.set("829356a53f49da37b07aa6da90cadf1d", forKey: "APIKEY")
+        keychain.set("f568f1864cfac5629ef6514d050ce4efde17c0a9", forKey: "PRIVATEAPIKEY")
     }
 
     // MARK: UISceneSession Lifecycle

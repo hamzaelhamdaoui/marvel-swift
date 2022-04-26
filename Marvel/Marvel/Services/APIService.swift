@@ -9,6 +9,7 @@ import Alamofire
 import CryptoKit
 import Foundation
 import FutureKit
+import KeychainSwift
 
 protocol ServiceProtocol {
     func fetchCharacters(start: Int?, limit: Int?, searchText: String) -> Future<CharactersResponse>
@@ -32,14 +33,15 @@ class APIService: ServiceProtocol {
 
     private func getParameters() -> Parameters {
         var parameters = Parameters()
+        let keychain = KeychainSwift()
         let timeStamp = String(Int(Date().timeIntervalSince1970))
-        let privateKey = "f568f1864cfac5629ef6514d050ce4efde17c0a9"
-        let publicKey = APIKEY
+        let privateKey = keychain.get("PRIVATEAPIKEY") ?? ""
+        let publicKey = keychain.get("APIKEY") ?? ""
         let stringToHash = timeStamp + privateKey + publicKey
         let hash = MD5(string: stringToHash)
 
         parameters["ts"] = timeStamp
-        parameters["apikey"] = APIKEY
+        parameters["apikey"] = publicKey
         parameters["hash"] = hash
 
         return parameters

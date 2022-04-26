@@ -28,6 +28,9 @@ def commonPods
   
   # Code quality
   pod 'SwiftLint'
+  
+  # Keychain Helper
+  pod 'KeychainSwift', '~> 20.0'
 end
 
 target 'Marvel' do
