@@ -21,7 +21,7 @@ class DetailViewController: UIViewController {
 
     var viewModel: DetailViewModel?
     var disposeBag = DisposeBag()
-    
+
     @IBAction func changeResourceType(_ sender: UIButton) {
         if sender == self.comicsButton {
             viewModel?.selectedResourceType.value = .comics

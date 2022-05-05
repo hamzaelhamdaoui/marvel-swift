@@ -11,28 +11,26 @@ import FutureKit
 import ReactiveKit
 
 class HomeViewModel {
-    var dataManager: ServiceProtocol
     var characters = Observable<[Character]>([])
     var searchText = Observable<String?>("")
     var isAnimating = Observable<Bool>(false)
     var fetchError = Observable<Error?>(nil)
+    var fetchCharactersUseCase = FetchCharactersUseCase()
 
-    init(dataManager: ServiceProtocol = APIService.shared) {
-        self.dataManager = dataManager
-    }
-
-    func fetchCharacters(start: Int?, limit: Int?) -> Future<CharactersResponse> {
+    func fetchCharacters(start: Int?, limit: Int?, onSuccess: ((Bool) -> Void)?) {
         isAnimating.value = true
-        return dataManager.fetchCharacters(start: start, limit: limit, searchText: searchText.value ?? "")
-            .then { response in
-                self.isAnimating.value = false
-                if let results = response.data?.results {
-                    self.characters.value.append(contentsOf: results)
-                }
+        fetchCharactersUseCase.execute(start: start, limit: limit, searchText: searchText.value ?? "") { characters in
+            self.isAnimating.value = false
+            self.characters.value.append(contentsOf: characters)
+            if characters.isEmpty {
+                onSuccess?(false)
+            } else {
+                onSuccess?(true)
             }
-            .onFail { error in
-                self.isAnimating.value = false
-                self.fetchError.value = error
-            }
+        } onError: { error in
+            self.isAnimating.value = false
+            self.fetchError.value = error
+            onSuccess?(false)
+        }
     }
 }

@@ -30,13 +30,11 @@ enum ResourceType {
 }
 
 class DetailViewModel {
-    let dataManager: ServiceProtocol
     let character: Character
     var selectedResourceType = Observable<ResourceType>(.comics)
 
-    init(character: Character, dataManager: ServiceProtocol = APIService.shared) {
+    init(character: Character) {
         self.character = character
-        self.dataManager = dataManager
     }
 
     func getItemsByResourceType() -> [Items] {

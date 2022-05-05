@@ -36,6 +36,7 @@
 		BBA73692280D77FA00F95DC4 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBA73691280D77FA00F95DC4 /* Home.storyboard */; };
 		BBA73694280D780F00F95DC4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA73693280D780F00F95DC4 /* HomeViewController.swift */; };
 		BBA73696280D781C00F95DC4 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA73695280D781C00F95DC4 /* HomeViewModel.swift */; };
+		BBBEFDD2282413F800698B59 /* FetchCharactersUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBEFDD1282413F800698B59 /* FetchCharactersUseCase.swift */; };
 		BBC5E0DC280D8C0500E9E1A7 /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC5E0D2280D8C0400E9E1A7 /* Items.swift */; };
 		BBC5E0DD280D8C0500E9E1A7 /* CharactersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC5E0D3280D8C0400E9E1A7 /* CharactersResponse.swift */; };
 		BBC5E0DE280D8C0500E9E1A7 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC5E0D4280D8C0400E9E1A7 /* Character.swift */; };
@@ -103,6 +104,7 @@
 		BBA73691280D77FA00F95DC4 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		BBA73693280D780F00F95DC4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		BBA73695280D781C00F95DC4 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		BBBEFDD1282413F800698B59 /* FetchCharactersUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchCharactersUseCase.swift; sourceTree = "<group>"; };
 		BBC5E0D2280D8C0400E9E1A7 /* Items.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
 		BBC5E0D3280D8C0400E9E1A7 /* CharactersResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersResponse.swift; sourceTree = "<group>"; };
 		BBC5E0D4280D8C0400E9E1A7 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
@@ -264,6 +266,7 @@
 				BBA73691280D77FA00F95DC4 /* Home.storyboard */,
 				BBA73693280D780F00F95DC4 /* HomeViewController.swift */,
 				BBA73695280D781C00F95DC4 /* HomeViewModel.swift */,
+				BBBEFDD1282413F800698B59 /* FetchCharactersUseCase.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -597,6 +600,7 @@
 				BBA73696280D781C00F95DC4 /* HomeViewModel.swift in Sources */,
 				BBC5E0E1280D8C0500E9E1A7 /* Thumbnail.swift in Sources */,
 				BB91790D2811A3B300715122 /* UIView_Extensions.swift in Sources */,
+				BBBEFDD2282413F800698B59 /* FetchCharactersUseCase.swift in Sources */,
 				BB9179072811A3B300715122 /* ImageViewerController.swift in Sources */,
 				BBF9430F280EFFE600BAE9E9 /* Future+Throws.swift in Sources */,
 				BB91790B2811A3B300715122 /* ImageViewerOption.swift in Sources */,

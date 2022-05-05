@@ -9,17 +9,17 @@ import XCTest
 @testable import Marvel
 
 class DetailViewModelTests: MarvelTests {
-    let homeViewModel = HomeViewModel(dataManager: APIServiceMock.shared)
+    let homeViewModel = HomeViewModel()
     var detailViewModel: DetailViewModel?
 
     override func setUpWithError() throws {
         try super.setUpWithError()
-        self.homeViewModel.fetchCharacters(start: nil, limit: nil)
-            .then { response in
-                if let character = response.data?.results?.first {
-                    self.detailViewModel = DetailViewModel(character: character, dataManager: APIServiceMock.shared)
-                }
+        homeViewModel.fetchCharactersUseCase.charactersRepository = APIServiceMock.shared
+        self.homeViewModel.fetchCharacters(start: nil, limit: nil) { _ in
+            if let character = self.homeViewModel.characters.value.first {
+                self.detailViewModel = DetailViewModel(character: character)
             }
+        }
     }
     
     func testGetItemsByResourceType() {

@@ -97,17 +97,9 @@ extension HomeViewController: PaginatedTableViewDelegate {
             viewModel.characters.value = []
         }
 
-        viewModel.fetchCharacters(start: pageSize * (pageNumber), limit: TABLELIMIT)
-            .then({ results in
-                if results.data?.results?.isEmpty ?? true {
-                    onSuccess?(false)
-                } else {
-                    onSuccess?(true)
-                }
-            })
-            .onFail { _ in
-                onSuccess?(false)
-            }
+        viewModel.fetchCharacters(start: pageSize * (pageNumber), limit: TABLELIMIT) { success in
+            onSuccess?(success)
+        }
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
